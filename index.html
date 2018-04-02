@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style1.css" />
+	<title>Welcome to our Emergency Services</title>
+</head>
+ 
+<body class="body">
+	<div class="menu2">
+		<button class="button2" onclick="alert('Non emergency services')">Non Emergency services</button>
+	</div>
+
+	<div class="location">
+		<p id="getLOC">Give us your location</p>
+
+		<input type="text" id="loc" class="txtbx" value="What is your location?" 
+				onclick="watermarkVanishLc()" onkeyup="" onblur="watermarkDispLc()">
+
+		<strip class="menu1">
+			<input type="button" class="button1" value="Get your Location" onclick="getLocation()" >
+		</strip>
+
+		<p id="suggLoc"></p>
+	</div>
+
+	<div class="input">
+		<p id="loc">Type in your emergency</p>
+	  
+		<form id="form1" action="hosp_dat1.php">
+		
+			<input type="text" id="emergency" class="txtbx" value="What is your emergency?" 
+					onclick="watermarkVanishEm()" onkeyup="sugg()" onblur="watermarkDispEm()">
+			
+			<input type="hidden" id="LLAT" name="LLAT"><input type="hidden" id="LLONG" name="LLONG"> 
+			
+			<strip class="menu1">
+				<input type="button" value="Search for hospitals" class="button1" onclick="submitForm()">
+			</strip>
+	  </form>
+	  
+	  <p id="suggEm"></p>
+
+	</div>
+	<script src="scriptIndex.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCevjjzQ5BNKk8HEE9iA3c3B4_YzSRJSm4&libraries=places"></script>
+</body>
+</html>

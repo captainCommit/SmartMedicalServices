@@ -1,0 +1,65 @@
+.button1 {
+	padding-bottom:3%;
+	background-color:blue;
+	padding-top:3%;
+	color:white;
+	font-size: 16px;
+	border-width:0px;
+	position:relative;
+	z-index:1;
+}
+.button2 {
+	padding-bottom:1.5%;
+	background-color:blue;
+	padding-top:1.5%;
+	color:white;
+	font-size: 16px;
+	border-width:0px;
+	position:absolute;
+	text-align:left;
+	z-index:1;
+}
+.location{
+	position:absolute;
+	left:25%;
+	font-size:25px;
+	top:15%;
+	color:black;
+	border:0px;
+}
+.input{
+	position:absolute;
+	font-size:25px;
+	left:25%;
+	top:45%;
+	width:80%;
+}
+.txtbx{
+	width:80%;
+	font-size:25px;
+	color:gray;
+}
+.submitB{
+	position:relative;
+	background-color:blue;
+}
+.SubmitButton{
+	padding-bottom:20px;
+	background-color:blue;
+	padding-top:20px;
+	color:white;
+	font-size: 16px;
+	border-width:0px;
+	position:relative;
+	z-index:1;
+	
+}
+.body{
+
+}
+.menu1:hover .button1 {
+	background-color: navy;
+}	
+.menu2:hover .button2{
+	background-color:navy;
+}
