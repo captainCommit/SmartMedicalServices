@@ -3,47 +3,70 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style1.css" />
+	<!--link rel="stylesheet" type="text/css" href="style1.css"-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Welcome to our Emergency Services</title>
 </head>
  
-<body class="body">
-	<div class="menu2">
-		<button class="button2" onclick="alert('Non emergency services')">Non Emergency services</button>
-	</div>
-
-	<div class="location">
-		<p id="getLOC">Give us your location</p>
-
-		<input type="text" id="loc" class="txtbx" value="What is your location?" 
-				onclick="watermarkVanishLc()" onkeyup="" onblur="watermarkDispLc()">
-
-		<strip class="menu1">
-			<input type="button" class="button1" value="Get your Location" onclick="getLocation()" >
-		</strip>
-
-		<p id="suggLoc"></p>
-	</div>
-
-	<div class="input">
-		<p id="loc">Type in your emergency</p>
-	  
-		<form id="form1" action="hosp_dat1.php">
-		
-			<input type="text" id="emergency" class="txtbx" value="What is your emergency?" 
-					onclick="watermarkVanishEm()" onkeyup="sugg()" onblur="watermarkDispEm()">
+<body class="container">
+	<h1>Welcome To Smart Health Services</h1>
+	<hr>
+	<p style="font-size:3vw;">Give us your location</p>
+	<div class="row" style="margin-bottom: 2vw;">
+		<div class="col-lg-8 location">
+			<input type="text" id="loc" class="form-control" placeholder="Enter Your location" required>
+		</div>
+		<div class="col-lg-4">
+			<input type="button" class="btn btn-info" id="but2" value="Get your Location" onclick="getLocation()" onkeyup="getLocation()">
+		</div>
+		<script>
 			
+		</script>
+	</div>
+	
+<div class="well">
+		<p id="loc" style = "font-size:3vw;">Type in your emergency</p>
+		<form id="form1" method = "POST" action="hosp_index.html">
+		<div class="row" style="margin-top: 4vw;">
+			<div class="col-lg-8">
+				<input type="text" id="emergency" class="form-control" placeholder="What is your emergency?"  onkeyup="sugg()">
+			</div>
 			<input type="hidden" id="LLAT" name="LLAT"><input type="hidden" id="LLONG" name="LLONG"> 
-			
-			<strip class="menu1">
-				<input type="button" value="Search for hospitals" class="button1" onclick="submitForm()">
-			</strip>
-	  </form>
-	  
-	  <p id="suggEm"></p>
-
+			<div class="col-lg-4">
+				<input type="submit" value="Search for hospitals" class="btn btn-primary">
+			</div>
+		</div>
+	  	</form>
 	</div>
-	<script src="scriptIndex.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCevjjzQ5BNKk8HEE9iA3c3B4_YzSRJSm4&libraries=places"></script>
+	<p id="suggEm"></p>
+	</div>
+	<div class="row">
+			<div class="col-lg-5">
+				<button class="btn btn-primary" id="but1"value="">Non Emergency Services</button>
+				<script type="text/javascript">
+					$("#but1").click(function(){
+						alert("This Is the link To Non-Emergency Services");
+					})
+				</script>
+			</div>
+		</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIKDfswraYdI6K2hiu5U-C-_cqDtQHxPA&libraries=places&callback=initMap"
+	async defer></script>
+	<script src="index.js"></script>	
+	<br>
+	<br>
+	<div id="map" style="height:35vw; width:35vw; border: 1px solid #000000">
+	</div>
+	<div id="infowindow-content">
+			<img src="" width="16" height="16" id="place-icon">
+			<span id="place-name"  class="title"></span><br>
+			<span id="place-address"></span>
+	</div>
+	<br>
+	<br>
+	
 </body>
 </html>
