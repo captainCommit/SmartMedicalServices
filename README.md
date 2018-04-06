@@ -1,7 +1,7 @@
 # SmartMedicalServices
 The project aims to improve the medical health care services in India. The incorporation of Information Technology can sort out many problems existing in our current health care scenario.
 The objectives of the project
-1. Develop a medical emergency response system
+1. Develop a medical emergency response system<br>
   a. Nearest hospitals to consult in case of emergency
   b. Information about the doctor who is in charge of emergency
   c. Smartly fill out the "patient registration form" enroute to the hospital and send it to the hospital via GMAIL API
