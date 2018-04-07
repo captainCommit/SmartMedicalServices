@@ -13,3 +13,5 @@ The objectives of the project are<br>
 3. Create a secure patient medical record directory, to be consulted for further treatments, accessible only after the authorisation by the owner of the record (the patient). <br>
 4. Create an UI for the doctors to generate digital prescription. <br>
 5. Create an UI for MOBILE HEALTHCARE SERVICE or HEALTHCARE ON A VAN. Consulting with the doctors via video conference. Useful for providing healthcare services to remote parts of India and villages where quality healthcare service is not available.<br>
+
+The website is live on https://smartmedicare.000webhostapp.com/
