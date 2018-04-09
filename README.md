@@ -3,9 +3,10 @@ The project aims to improve the medical health care services in India. The incor
 The objectives of the project are<br>
 1. Develop a medical emergency response system<br>
   a. Nearest hospitals to consult in case of emergency<br>
-  b. Information about the doctor who is in charge of emergency<br>
-  c. Smartly fill out the "patient registration form" enroute to the hospital and send it to the hospital via GMAIL API <br>
-  d. Inform the doctor of the condition of patient<br>
+  b. Information about nearest blood bank, and what blood groups are available <br>
+  c. Information about the doctor who is in charge of emergency<br>
+  d. Smartly fill out the "patient registration form" enroute to the hospital and send it to the hospital via GMAIL API <br>
+  e. Inform the doctor of the condition of patient<br>
 2. Create and maintain a real-time database, which would contain all the vital informations about the hospital, like <br>
   a. Number of doctors currently on service<br>
   b. Number of empty beds available (in case of emergency)<br>
