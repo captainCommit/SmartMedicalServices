@@ -8,7 +8,7 @@ The objectives of the project are<br>
   d. Inform the doctor of the condition of patient<br>
 2. Create and maintain a real-time database, which would contain all the vital informations about the hospital, like <br>
   a. Number of doctors currently on service<br>
-  b. Number of empty beds available<br>
+  b. Number of empty beds available (in case of emergency)<br>
   c. Is a particular drug currently available at the pharmacy of the hospital<br>
 3. Create a secure patient medical record directory, to be consulted for further treatments, accessible only after the authorisation by the owner of the record (the patient). <br>
 4. Create an UI for the doctors to generate digital prescription. <br>
