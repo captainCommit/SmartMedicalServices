@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--link rel="stylesheet" type="text/css" href="style1.css"-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Welcome to our Emergency Services</title>
+</head>
+ 
+<body class="container" onload="printList()">
+	<h1>Nearby Hospitals</h1>
+	<div class="well">
+		<p id="list" style = "font-size:20px;"></p>
+		<script>
+			function formatList(string)
+			{
+				var arr=string.split("_");
+				for(a in arr)
+				{
+					string=a.concat("")
+				}
+				return arr[0];
+			}
+			function printList()
+			{
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("list").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("GET", "hosp_dat.php" , true);
+				xmlhttp.send();
+			}
+		</script>
+	</div>
+	<script src="index.js"></script>

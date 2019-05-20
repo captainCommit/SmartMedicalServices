@@ -25,46 +25,10 @@
 			
 		</script>
 	</div>
-	<br>
-	<br>	
-	<div id="map" style="height:35vw; width:35vw; border: 1px solid #000000">
-	</div>
-	<div id="infowindow-content">
-			<img src="" width="16" height="16" id="place-icon">
-			<span id="place-name"  class="title"></span><br>
-			<span id="place-address"></span>
-	</div>
-	<br>
-	<br>
-	<div class="well">
-		<p id="loc" style = "font-size:3vw;">Type in your emergency</p>
-		<form id="form1" method = "POST" action="hosp_dat1.php">
-		<div class="row" style="margin-top: 4vw;">
-			<div class="col-lg-8">
-				<input type="text" id="emergency" class="form-control" placeholder="What is your emergency?"  onkeyup="sugg()">
-			</div>
-			<input type="hidden" id="LLAT" name="LLAT"><input type="hidden" id="LLONG" name="LLONG"> 
-			<div class="col-lg-4">
-				<input type="button" value="Search for hospitals" class="btn btn-primary" onclick="submitForm()">
 			</div>
 		</div>
 	  	</form>
 	</div>
 	<p id="suggEm"></p>
-	</div>
-	<div class="row">
-			<div class="col-lg-5">
-				<button class="btn btn-primary" id="but1"value="">Non Emergency Services</button>
-				<script type="text/javascript">
-					$("#but1").click(function(){
-						alert("This Is the link To Non-Emergency Services");
-					})
-				</script>
-			</div>
-		</div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIKDfswraYdI6K2hiu5U-C-_cqDtQHxPA&libraries=places&callback=initMap"
-	async defer></script>
-	<script src="index.js"></script>
 </body>
 </html>
